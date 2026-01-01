@@ -10,5 +10,6 @@ function convertToBool(text, fault = 'true') {
 module.exports = {
     SESSION_ID: process.env.SESSION_ID || '', // 👈👈paste your session id here
     PORT: process.env.PORT || 8000,
-    SESSION_NAME: process.env.SESSION_NAME || "auth_info_baileys"
+    SESSION_NAME: process.env.SESSION_NAME || "auth_info_baileys",
+    PREFIX: process.env.PREFIX || '.'
 };

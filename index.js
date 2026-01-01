@@ -6,10 +6,15 @@
  * License: MIT
  */
 
-const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion } = require('@whiskeysockets/baileys');
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, delay } = require('@whiskeysockets/baileys');
 const pino = require('pino');
 const express = require('express');
 const config = require('./config');
+const commandLoader = require('./bot/utils/commandLoader');
+
+// Load all commands
+console.log('Loading commands...');
+commandLoader.loadCommands();
 
 // Express server for deployment platforms
 const app = express();
@@ -22,6 +27,9 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+// Prefix
+const PREFIX = config.PREFIX || '.';
 
 // Main bot function
 async function startBot() {
@@ -38,7 +46,7 @@ async function startBot() {
         const sock = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
-            printQRInTerminal: !config.SESSION_ID, // Show QR if no session ID
+            printQRInTerminal: !config.SESSION_ID,
             auth: state,
             browser: ['Mark Sumo Bot', 'Chrome', '1.0.0']
         });
@@ -56,7 +64,7 @@ async function startBot() {
 
                 if (shouldReconnect) {
                     console.log('Reconnecting...');
-                    startBot();
+                    setTimeout(startBot, 5000);
                 } else {
                     console.log('Logged out. Please scan QR code again.');
                 }
@@ -72,34 +80,43 @@ async function startBot() {
             const msg = messages[0];
             if (!msg.message) return;
 
+            // Ignore messages from bot itself
+            if (msg.key.fromMe) return;
+
             // Extract message text
             const messageText = msg.message.conversation ||
                                msg.message.extendedTextMessage?.text ||
+                               msg.message.imageMessage?.caption ||
+                               msg.message.videoMessage?.caption ||
                                '';
 
-            // Basic command handler
-            if (messageText.startsWith('.')) {
-                const command = messageText.slice(1).toLowerCase();
+            // Check if message starts with prefix
+            if (!messageText.startsWith(PREFIX)) return;
 
-                // Test command
-                if (command === 'alive' || command === 'ping') {
-                    await sock.sendMessage(msg.key.remoteJid, {
-                        text: '✓ Mark Sumo Bot is alive and running!'
-                    }, { quoted: msg });
-                }
+            // Parse command and args
+            const args = messageText.slice(PREFIX.length).trim().split(/ +/);
+            const commandName = args.shift().toLowerCase();
 
-                // Help command
-                if (command === 'help' || command === 'menu') {
-                    const helpText = `*Mark Sumo Bot Commands*\n\n` +
-                                   `• .alive - Check if bot is running\n` +
-                                   `• .ping - Check bot response\n` +
-                                   `• .help - Show this menu\n\n` +
-                                   `More commands coming soon!`;
+            // Get command
+            const command = commandLoader.getCommand(commandName);
 
-                    await sock.sendMessage(msg.key.remoteJid, {
-                        text: helpText
-                    }, { quoted: msg });
-                }
+            if (!command) return;
+
+            // Execute command
+            try {
+                console.log(`Executing command: ${command.name} from ${msg.key.remoteJid}`);
+
+                await command.execute(sock, msg, args, {
+                    commandLoader,
+                    config,
+                    PREFIX
+                });
+            } catch (error) {
+                console.error(`Error executing command ${command.name}:`, error);
+
+                await sock.sendMessage(msg.key.remoteJid, {
+                    text: `❌ Error executing command: ${error.message}`
+                }, { quoted: msg });
             }
         });
 

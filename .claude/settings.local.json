@@ -7,7 +7,14 @@
       "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" config --local -l)",
       "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" status)",
       "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" diff --name-only)",
-      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" add .)"
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" add .)",
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" commit -m \"$\\(cat <<''EOF''\nRebrand to Mark Sumo Bot and complete project restructure\n\n- Rebranded from PRINCE-MDX to Mark Sumo Bot\n- Updated package.json with new name, author, and scripts\n- Updated app.json for deployment configuration\n- Changed LICENSE to MIT under Mark Sumo\n- Completely rewrote README.md with comprehensive documentation\n- Created clean index.js bot entry point \\(replaced obfuscated prince-mdx.js\\)\n- Added .gitignore for proper file exclusions\n- Created .env.example for configuration template\n- Set up bot folder structure \\(commands, events, utils\\)\n- Added IMPLEMENTATION_PLAN.md with complete roadmap for session service and hosting panel\n\nThis is now a fully rebranded, clean foundation for building Mark Sumo Bot ecosystem.\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" push origin main)",
+      "Bash(git -C:*)",
+      "Bash(git init:*)",
+      "Bash(npm install:*)",
+      "Bash(copy .env.example .env)",
+      "Bash(git add:*)"
     ]
   }
 }
