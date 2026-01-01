@@ -1,162 +1,255 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:87CEEB,100:87CEEB&height=180&section=header&text=PRINCE%20MDXI%20WHATSAPP%20BOT&fontSize=38&fontColor=ffffff&fontFamily=Roboto&animation=twinkling" width="100%"/>
+# Mark Sumo Bot
 
-
-  <p align="center">
-<a href="https://github.com/Mayelprince?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/itx-alii-raza?color=blue&style=flat-square"></a>
-<a href="https://github.com/Mayelprince/PRINCE-MDXI/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Mayelprince/PRINCE-MDXI?color=blue&style=flat-square"></a>
-<a href="https://github.com/Mayelprince/PRINCE-MDXI/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Mayelprince/PRINCE-MDXI?color=blue&style=flat-square"></a>
-<a href="https://github.com/Mayelprince/PRINCE-MDXI/"><img title="Size" src="https://img.shields.io/github/repo-size/Mayelprince/PRINCE-MDXI?style=flat-square&color=green"></a>
-<a href="https://github.com/Mayelprince/PRINCE-MDXI/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
-</p>
-<p align='center'>
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Node.js-18+-green?style=for-the-badge&logo=node.js" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
 </p>
 
-> **CURRENT BOT VERSION ➜ `4.5.0 ⚡`**
----
-
-```
-DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
-```
----
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=1200&height=100&lines=THANKS%20FOR%20CHOOSING%20PRINCE-MDXI;MULTI%20DEVICE%20WHATSAPP%20BOT;CREATED%20BY%20PRINCE%20TECH" alt="Typing SVG" />
-</a>
+<p align="center">
+  A powerful and user-friendly WhatsApp multi-device bot built with Baileys
 </p>
-  
---- 
-
-<a><img src='https://files.catbox.moe/upmwpw.jpg'/></a>
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-***
-
-
-
-
-### 1. 𐃁FORK THIS REPOSITORY𐃁
-
-`FORK 🍴 AND STAR ⭐ IF YOU LIKE THIS BOT`
-
-  <a href="https://github.com/Mayelprince/PRINCE-MDXI/fork"><img title="PRINCE-MDXI" src="https://img.shields.io/badge/FORK-PRINCE%20MD-BOTh?color=indigo&style=for-the-badge&logo=stackshare"></a>
-  
-### 2. 𐃁GET SESSION ID𐃁 
-
-`IF YOU DON'T HAVE YOUR SESSION_ID SO U CAN GET IT CLICK ON SESSION_ID BUTTON AND PASTE YOUR NUMBER With COUNTRY CODE EXAMPLE:23769xxxxxx THEN YOU CAN GET YOUR SESSION_ID ✠`
-
-
-> **1. PAIR CODE SESSION ID**
-
-<a href='https://sessions.princetechn.com/' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
-<br> 
-
-> **2. PAIR CODE SESSION ID**
-
-<a href='https://session.princetechn.com' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
-<br> 
-
-
 
 ---
 
-### <h2 align="">𐃁PRINCE-MDXI DEPLOYMENT OPTIONS𐃁</h2>
+## Features
+
+- Multi-device WhatsApp support
+- Built with Baileys WhatsApp Web API
+- PM2 process management for reliability
+- Easy deployment to multiple platforms
+- Session-based authentication
+- Customizable commands and features
+- MongoDB and PostgreSQL support
+- AI integration capabilities (Google Generative AI)
+- Media processing (images, videos, stickers)
 
 ---
 
-### <h4 align="">1. HEROKU</h4>
-<p style="text-align: center; font-size: 1.2em;">
+## Prerequisites
 
+- Node.js v18 or higher
+- npm or yarn
+- A WhatsApp account for the bot
+- (Optional) MongoDB or PostgreSQL database
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deployment-h4bs.onrender.com)
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+---
 
+## Getting Started
 
+### 1. Get Your Session ID
 
-### <h4 align="">2. PRINCE HOST FREE</h4>
-<p style="text-align: center; font-size: 1.2em;">
-  
-<p align="">
-<a href='https://host.princetechn.com' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-PrinceHost ‎Deploy-6971FF?style=for-the-badge&logo=Github&logoColor=white'/< width=150 height=28/p></a>
-  <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+Visit the Mark Sumo Bot session generator:
 
+<a href='https://sessions.your-domain.com' target="_blank">
+  <img alt='Get Session ID' src='https://img.shields.io/badge/Get%20Session%20ID-orange?style=for-the-badge&logo=whatsapp&logoColor=white'/>
+</a>
 
-  ### <h4 align="">3. KOYEB</h4>
-<p style="text-align: center; font-size: 1.2em;">
+Scan the QR code with your WhatsApp to generate a session ID.
 
-<p align="">
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=muzantech/SIGMA-MDX&ports=3000&env[PREFIX]=.&env[SESSION_ID]=&env[ALWAYS_ONLINE]=false&env[MODE]=public&env[AUTO_STATUS_MSG]=Seen%20status%20by%20PRINCE-MDX&env[AUTO_STATUS_REPLY]=false&env[AUTO_STATUS_SEEN]=true&env[AUTO_TYPING]=false&env[ANTI_LINK]=true&env[AUTO_REACT]=false&env[READ_MESSAGE]=false' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+### 2. Fork This Repository
 
-### <h4 align="">4. RAILWAY</h4>
-<p style="text-align: center; font-size: 1.2em;">
+Click the button below to fork this repository:
 
-<p align="">
-<a href='https://railway.app/new' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-railway deploy-FF8700?style=for-the-badge&logo=railway&logoColor=white'/< width=150 height=28/p></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a href="https://github.com/Santos1134/markwhatsappbot/fork">
+  <img title="Mark Sumo Bot" src="https://img.shields.io/badge/FORK-Mark%20Sumo%20Bot?color=indigo&style=for-the-badge&logo=github">
+</a>
 
-### <h4 align="">5. RENDER</h4>
-<p style="text-align: center; font-size: 1.2em;">
-  
-<p align="">
-<a href='https://dashboard.render.com/web/new' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Render deploy-black?style=for-the-badge&logo=render&logoColot=white'/< width=150 height=28/p></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+### 3. Installation
 
-  
-<b><strong><summary align="" style="color: Yello;">EASIEST METHOD 2</summary></strong></b>
-<p style="text-align: center; font-size: 1.2em;">
+Clone your forked repository:
 
-</details>
+```bash
+git clone https://github.com/Santos1134/markwhatsappbot.git
+cd markwhatsappbot
+```
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+Install dependencies:
 
+```bash
+npm install
+```
 
-### <h4 align="">7. REPLIT</h4>
-<p style="text-align: center; font-size: 1.2em;">
+### 4. Configuration
 
-<p align="">
-<a href='https://replit.com/~' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Replit Deploy-1976D2?style=for-the-badge&logo=replit&logoColor=white'/< width=150 height=28/p></a> </a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+Create a `.env` file in the root directory:
 
+```env
+SESSION_ID=your-session-id-here
+PORT=8000
+SESSION_NAME=auth_info_baileys
+```
 
-## 🪀 WHATSAPP CHANNEL 
-STAY CONNECTED WITH THE LATEST UPDATES AND COMMUNITY BY JOINING OUR OFFICIAL WHATSAPP GROUP AND CHANNEL. YOU CAN ALSO CONTACT THE OWNER DIRECTLY.
+### 5. Running the Bot
 
-[![WhatsApp Channel](https://img.shields.io/badge/JOIN-WHATSAAP%20CHANNEL-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029Vakd0RY35fLr1MUiwO3O)
+Start the bot:
+```bash
+npm start
+```
 
-## 🪀 WHATSAPP GROUP
-JOINING OUR OFFICIAL WHATSAPP GROUP AND CHANNEL. YOU CAN ALSO CONTACT THE OWNER DIRECTLY.
+Stop the bot:
+```bash
+npm stop
+```
 
-[![WhatsApp Group](https://img.shields.io/badge/JOIN-WHATSAAP%20GROUP-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029Vakd0RY35fLr1MUiwO3O)
+Restart the bot:
+```bash
+npm restart
+```
 
- 
+---
 
+## Deployment Options
 
-***
+### 1. Heroku
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
- <br>
-<h2 align="center"> ⚠️ DISCLAIMER ⚠️
- </h2>
- 
- ---
+1. Click the deploy button above
+2. Enter your `SESSION_ID` in the environment variables
+3. Click "Deploy App"
 
-<h3 align="center"> DON'T COPY WITHOUT PERMISSION 
-</h3>
+### 2. Mark Sumo Host (Custom Hosting)
 
-<br>
+<a href='https://host.your-domain.com' target="_blank">
+  <img alt='Mark Sumo Host' src='https://img.shields.io/badge/-Mark%20Sumo%20Host%20Deploy-6971FF?style=for-the-badge&logo=server&logoColor=white'/>
+</a>
+
+Deploy with our custom hosting panel for managed deployment and easy configuration.
+
+### 3. Railway
+
+<a href='https://railway.app/new' target="_blank">
+  <img alt='Railway' src='https://img.shields.io/badge/-Railway%20Deploy-FF8700?style=for-the-badge&logo=railway&logoColor=white'/>
+</a>
+
+1. Click the deploy button above
+2. Connect your GitHub repository
+3. Add `SESSION_ID` environment variable
+4. Deploy
+
+### 4. Render
+
+<a href='https://dashboard.render.com/web/new' target="_blank">
+  <img alt='Render' src='https://img.shields.io/badge/-Render%20Deploy-black?style=for-the-badge&logo=render&logoColor=white'/>
+</a>
+
+1. Click the deploy button above
+2. Connect your repository
+3. Add `SESSION_ID` environment variable
+4. Deploy
+
+### 5. Koyeb
+
+<a href='https://app.koyeb.com/services/deploy' target="_blank">
+  <img alt='Koyeb' src='https://img.shields.io/badge/-Koyeb%20Deploy-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/>
+</a>
+
+1. Click the deploy button
+2. Connect repository
+3. Add environment variables
+4. Deploy
+
+### 6. Replit
+
+<a href='https://replit.com/~' target="_blank">
+  <img alt='Replit' src='https://img.shields.io/badge/-Replit%20Deploy-1976D2?style=for-the-badge&logo=replit&logoColor=white'/>
+</a>
+
+---
+
+## Environment Variables
+
+| Variable | Description | Required | Default |
+|----------|-------------|----------|---------|
+| `SESSION_ID` | WhatsApp session authentication ID | Yes | - |
+| `PORT` | Server port | No | 8000 |
+| `SESSION_NAME` | Session folder name | No | auth_info_baileys |
+
+---
+
+## Project Structure
 
 ```
-I'M PRINCE M.
-THANKS TO;
-TAIRA MAKINO.
-GIFTED.
-FOR SUPPORTING ME IN THIS PROJECT 🙏 
+mark-sumo-bot/
+├── index.js              # Main bot entry point
+├── config.js             # Configuration management
+├── bot/                  # Bot feature modules
+│   ├── commands/         # Command handlers
+│   ├── events/           # Event listeners
+│   └── utils/            # Utility functions
+├── package.json          # Dependencies
+├── app.json              # Platform deployment config
+├── .env                  # Environment variables
+└── README.md             # Documentation
 ```
------
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-------
+---
+
+## Tech Stack
+
+- **Runtime:** Node.js with PM2
+- **WhatsApp API:** @whiskeysockets/baileys (v6.7.19)
+- **Web Framework:** Express.js
+- **Databases:** MongoDB, PostgreSQL (with Sequelize ORM)
+- **AI Integration:** Google Generative AI
+- **Media Processing:** Puppeteer, JIMP, Sharp
+- **Translation:** Google Translate API
+- **Other:** Axios, node-cron, qrcode
+
+---
+
+## Commands
+
+Commands will be documented as they are developed. The bot supports:
+- Custom command handlers
+- Event-driven architecture
+- Plugin system for extensibility
+
+---
+
+## Development
+
+This bot is under active development. Features are being added incrementally.
+
+To contribute:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+---
+
+## Support
+
+For support and updates:
+
+- GitHub Issues: [Report an issue](https://github.com/Santos1134/markwhatsappbot/issues)
+- Email: your-email@example.com
+- WhatsApp Channel: Coming soon
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Credits
+
+**Created by Mark Sumo**
+
+Built with Baileys WhatsApp Web API
+
+---
+
+## Disclaimer
+
+This bot is for educational and personal use only. Use responsibly and in accordance with WhatsApp's Terms of Service. The developers are not responsible for any misuse of this software.
+
+---
+
+<p align="center">
+  Made with ❤️ by Mark Sumo
+</p>

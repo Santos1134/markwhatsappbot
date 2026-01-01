@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" log --oneline)",
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" remote -v)",
+      "Bash(cat:*)",
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" config --local -l)",
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" status)",
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" diff --name-only)",
+      "Bash(git -C \"c:\\\\Users\\\\sumom\\\\PRINCE-MDXI\" add .)"
+    ]
+  }
+}
